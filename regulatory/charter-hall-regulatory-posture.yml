@@ -1,0 +1,94 @@
+generated: '2026-10-21'
+method: searched
+source:
+- https://www.charterhall.com.au/privacy-policy
+- https://www.charterhall.com.au/terms-of-use
+scope: >-
+  Charter Hall Group's corporate site (www.charterhall.com.au). The Privacy Policy is written under the Australian
+  Privacy Act / Australian Privacy Principles, with added sections for EU residents and California (CCPA) residents.
+  The Terms of Use page (HTTP 200) was also read. It carries no regulatory signal. The dossier had no pre-fetched
+  legal_pages, so both pages were fetched in this pass from links on the homepage. Charter Hall is a property
+  funds manager with no public developer API, so these signals describe the corporate and investor-facing website
+  and applications.
+signals:
+  data_subject_request:
+    url: https://www.charterhall.com.au/privacy-policy
+    section: Specific rights for European Union (EU) residents / Specific rights for California Consumer (CC) residents
+    note: >-
+      You can ask the Privacy Officer for access and correction. EU residents also get limited deletion and
+      portability rights, and California residents get CCPA rights to know, delete, opt out of sale and
+      non-discrimination.
+    evidence:
+    - source: https://www.charterhall.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: To request access to the personal information we hold, please contact our Privacy Officer.
+    - source: https://www.charterhall.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: If you believe that the personal information we hold about you is incorrect, incomplete or inaccurate, you can ask us to amend it.
+    - source: https://www.charterhall.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: You can ask us to help you move your personal information to other companies, where this is technically possible and only if we have collected and used your data via automatic means.
+    - source: https://www.charterhall.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: You have the right to opt-out of the sale of your personal information.
+  data_retention:
+    url: https://www.charterhall.com.au/privacy-policy
+    note: Retention is based on purpose and no retention periods are stated. Data is disposed of securely once it is no longer needed.
+    evidence:
+    - source: https://www.charterhall.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: We will store your personal information for as long as is reasonably necessary for the purposes for which it was collected, as explained in this Privacy Policy.
+    - source: https://www.charterhall.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: Where your information is no longer needed, we will make sure it is disposed of in a secure manner.
+  incident_notification:
+    url: https://www.charterhall.com.au/privacy-policy
+    note: >-
+      Under the Notifiable Data Breaches scheme, Charter Hall commits to tell affected individuals and the OAIC when
+      a breach is likely to cause serious harm. No notification time window is stated.
+    evidence:
+    - source: https://www.charterhall.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: If we establish that your personal information has been accessed or disclosed without authorisation, Charter Hall has an obligation under the Privacy Amendment (Notifiable Breaches) Act 2017 (Cth) to investigate the circumstances of the breach and take appropriate corrective actions.
+    - source: https://www.charterhall.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: In such situations, where it seems reasonable to conclude that the access to or disclosure of your personal information is likely to result in serious harm to you, we will advise you and the Office of the Australian Information Commissioner (OAIC) of the incident and provide details of the actions we are taking.
+  subprocessors:
+    url: https://www.charterhall.com.au/privacy-policy
+    section: Other website tracking services
+    note: >-
+      The policy describes the kinds of third parties that receive data (custodians, unit registries, payment
+      institutions and others). It names website tracking vendors in a list it calls non-exhaustive: Microsoft
+      Clarity, Taboola, The Trade Desk, DoubleClick, Yahoo, Hotjar, Bing UET, LinkedIn Insights, StackAdapt,
+      Click Cease and MediaMath, plus Google Analytics 4. It is not a formal subprocessor register.
+    evidence:
+    - source: https://www.charterhall.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: We may also disclose your personal information to third parties who assist us in the operation of our business and/or the provision of our products and services such as custodians and unit registry providers.
+    - source: https://www.charterhall.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'Below is a non-exhaustive list of the other website tracking services employed by Charter Hall:'
+  data_residency:
+    url: https://www.charterhall.com.au/privacy-policy
+    note: >-
+      There is no commitment to keep data in a particular region. The policy says Google Analytics data is usually
+      stored on Google servers in the U.S., and that EU residents may ask what protections apply to overseas transfers.
+    evidence:
+    - source: https://www.charterhall.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: You have the right to be informed about any protections that we have in in place where we are transferring your data overseas.
+    - source: https://www.charterhall.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: Google might transfer the personal information collected via this technical procedure to third parties.

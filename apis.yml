@@ -1,23 +1,103 @@
 aid: charter-hall
+
 name: Charter Hall
-description: 'Charter Hall is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Charter Hall (Charter Hall Group, ASX:CHC) describes itself as Australia''s leading diversified
+  property funds manager, with more than $94 billion in funds under management after 35 years of investing
+  in, managing and developing office, industrial and logistics, retail and social infrastructure property.
+  It manages listed REITs (Charter Hall Retail REIT, Long WALE REIT, Social Infrastructure REIT), unlisted
+  direct and wholesale property funds, and runs an online Investor Portal for applications and investor
+  access. No public developer API, API documentation or developer portal was found on its own sites. Surfaced
+  via the API Evangelist harvest backlog (source: australia-apidays-2026).'
+
 url: https://raw.githubusercontent.com/api-evangelist/charter-hall/refs/heads/main/apis.yml
+
+image: https://www.charterhall.com.au/images/librariesprovider2/property-images/hero/office-hero/1-lonsdale-street/wesley-place.jpg
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website verified as the company's own site (title "Charter Hall | Largest Diversified Property
+    Funds Manager in Australia"); apex redirects to www. portal.charterhall.com.au is an investor login
+    portal, not a developer portal, so it is recorded as Login. No developer documentation found.
+  evidence:
+  - url: https://charterhall.com.au/
+    status: 200
+  - url: https://www.charterhall.com.au/why-charter-hall/people-and-values/About-Us
+    status: 200
+  - url: https://portal.charterhall.com.au/
+    status: 200
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Real Estate
+- Property Funds Management
+- REIT
+- Investment Management
+- Commercial Property
+- Australia
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: WellKnown
+  url: well-known/charter-hall-well-known.yml
+- type: Hosts
+  url: hosts/charter-hall-hosts.yml
+- type: Vendors
+  url: vendors/charter-hall-vendors.yml
+- type: Newsroom
+  url: https://www.charterhall.com.au/News/news-article/2026/09/21/chifley-north--a-circular-fitout-in-practice
+- type: DomainSecurity
+  url: security/charter-hall-domain-security.yml
 - type: Website
-  url: https://charterhall.com.au/
+  url: https://www.charterhall.com.au/
+- type: About
+  url: https://www.charterhall.com.au/why-charter-hall/people-and-values/About-Us
+- type: Login
+  url: https://portal.charterhall.com.au/
+- type: Support
+  url: https://www.charterhall.com.au/Contact-Us
+- type: FAQ
+  url: https://www.charterhall.com.au/frequently-asked-questions
+- type: Blog
+  url: https://www.charterhall.com.au/media-centre/news-and-insights/View-all-News
+- type: Leadership
+  url: https://www.charterhall.com.au/why-charter-hall/leadership
+- type: Careers
+  url: https://www.charterhall.com.au/why-charter-hall/people-and-values/work-with-us
+- type: Governance
+  url: https://www.charterhall.com.au/corp-governance
+- type: TermsOfService
+  url: https://www.charterhall.com.au/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.charterhall.com.au/privacy-policy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/charter-hall
+- type: YouTube
+  url: https://www.youtube.com/channel/UChb4XB4nYcN18j4RmMfyUjQ
+
+apis: []
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

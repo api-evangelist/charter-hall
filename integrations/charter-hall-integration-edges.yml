@@ -1,0 +1,20 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/charter-hall/integrations
+- https://n8n.io/integrations/charter-hall/
+- https://composio.dev/toolkits/charter-hall
+- https://monid.ai/tools/charter-hall
+checked:
+- https://zapier.com/apps/charter-hall/integrations
+- https://www.charterhall.com.au/
+- https://portal.charterhall.com.au/
+- https://composio.dev/toolkits/charter-hall
+- https://monid.ai/tools/charter-hall
+- https://n8n.io/integrations/charter-hall/
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
+note: Charter Hall is a property funds manager with no public API, developer portal or integrations/partner-app
+  page; no marketplace listing found.
